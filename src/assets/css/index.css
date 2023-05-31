@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind variants;
+@tailwind utilities;
+
+.swiper-pagination{
+	all: unset !important;
+	display: hidden !important;
+}
+
+.swiper-button-prev{
+	all: unset !important;
+	display: hidden !important;
+}
+
+.swiper-button-next{
+	all: unset !important;
+	display: hidden !important;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after, .swiper-pagination-fraction > *, .swiper-pagination-fraction {
+	all: unset !important;
+	display: none !important;
+}
