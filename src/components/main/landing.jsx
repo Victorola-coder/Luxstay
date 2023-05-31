@@ -1,25 +1,22 @@
-import heroImage from "../../assets/images/house2.png";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import { useEffect, useState } from "react";
+import { StarIcon as StarOutline } from "@heroicons/react/24/outline";
 import {
-	PlayIcon,
-	StarIcon,
-	TvIcon,
-	WifiIcon,
-	ChevronLeftIcon,
-	ChevronRightIcon,
+    ChevronLeftIcon,
+    ChevronRightIcon,
+    PlayIcon,
+    StarIcon,
+    TvIcon,
+    WifiIcon,
 } from "@heroicons/react/24/solid";
+import { useEffect } from "react";
+import { Navigation, Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react";
 import deluxe1 from "../../assets/images/deluxeroom1.jpg";
-import deluxe2 from "../../assets/images/deluxeroom2.jpeg";
-import executive1 from "../../assets/images/executivelounge1.jpg";
 import executive2 from "../../assets/images/executivelounge2.jpg";
+import heroImage from "../../assets/images/house2.png";
 import standard1 from "../../assets/images/standardroom1.jpg";
-import standard2 from "../../assets/images/standardroom2.jpg";
-import { StarOutline } from "heroicons-react";
 
 export default function Landing() {
 	return (
