@@ -28,9 +28,9 @@ export default function Navbar() {
 	];
 
 	return (
-		<header className="w-full bg-red-400s">
-			<nav className="container mx-auto bg-red-white w-full p-3 flex items-center justify-between relative z-30 bg-white">
-				<div className="md:hidden max-md:block">
+		<header className="w-full">
+			<nav className="container mx-auto w-full p-3 flex items-center justify-between relative z-30 bg-white py-5">
+				<div className="md:hidden max-md:block relative z-10">
 					<button
 						className="space-y-1.5"
 						onClick={() => setIsOpened(!isOpened)}
@@ -56,7 +56,7 @@ export default function Navbar() {
 						/>
 					</button>
 				</div>
-				<div className="max-md:translate-x-4 md:translate-x-0">
+				<div className="max-md:w-full max-md:absolute max-md:inset-x-0 max-md:flex justify-center items-center">
 					<a href="#">
 						<img src={logo} alt="" className="w-10 h-10" />
 					</a>
@@ -74,7 +74,7 @@ export default function Navbar() {
 						))}
 					</ul>
 				</div>
-				<div>
+				<div className="max-md:relative z-10">
 					<button className="bg-teal-300 transition-all duration-300 hover:bg-teal-400 text-teal-900 font-bold text-sm rounded-full px-6 py-1 active:scale-95">
 						Login
 					</button>

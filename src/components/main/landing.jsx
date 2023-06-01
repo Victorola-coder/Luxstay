@@ -231,7 +231,7 @@ function Card({ data }) {
 					<img
 						src={data.image}
 						alt="Deluxe Room"
-						className="hover:scale-110 transition-all duration-300 w-full"
+						className="scale-110 transition-all duration-300 w-full hover:scale-125"
 						draggable={false}
 					/>
 				</div>
@@ -263,7 +263,7 @@ function Card({ data }) {
 						</div>
 					</div>
 					<div className="mt-2 pt-4 w-full">
-						<button className="bg-teal-200 w-full rounded-lg text-teal-900 py-1 font-bold border-2 border-teal-300 transition-all duration-300 active:scale-95">
+						<button className="bg-teal-200 w-full rounded-full text-teal-900 py-1 font-bold border-2 border-teal-300 transition-all duration-300 active:scale-95">
 							Book Now
 						</button>
 					</div>
