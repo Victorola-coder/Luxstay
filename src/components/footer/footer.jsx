@@ -44,7 +44,6 @@ export default function Footer() {
 					<div className="py-4 text-teal-900 font-bold  md:px-10 flex items-center md:justify-between max-md:justify-center gap-3">
 						<img
 							src={logo}
-							alt=""
 							className="w-12 h-12 bg-white rounded-full"
 						/>
 						<p className="footer__copyright">
