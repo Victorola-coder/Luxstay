@@ -9,24 +9,24 @@ import imageZ from "./assets/images/house3.jpeg";
 function App() {
 	return (
 		<>
-			<Navbar />
+			{/* <Navbar />
 			<Landing />
-			<Footer />
-			{/* <MyComponent /> */}
+			<Footer /> */}
+			<MyComponent />
 		</>
 	);
 }
 
 export default App;
 
-// const LoadingPage = () => {
-// 	return (
-// 		<div>
-// 			<h2>Loading...</h2>
-// 			<p className="absolute left-0 right-0">testing image loader hence i commented all the other codes.</p>
-// 		</div>
-// 	);
-// };
+const LoadingPage = () => {
+	return (
+		<div>
+			<h2>Loading...</h2>
+			<p className="absolute left-0 right-0">testing image loader hence i commented all the other codes.</p>
+		</div>
+	);
+};
 
 // const MyComponent = () => {
 // 	const [isLoading, setIsLoading] = useState(true);
@@ -60,41 +60,41 @@ export default App;
 // 	);
 // };
 
-// const MyComponent = () => {
-// 	const [isLoading, setIsLoading] = useState(true);
-// 	const imagePaths = [
-// 		imageX,
-// 		imageY,
-// 		imageZ,
-// 	]; // Replace with the paths to your images
+const MyComponent = () => {
+	const [isLoading, setIsLoading] = useState(true);
+	const imagePaths = [
+		imageX,
+		imageY,
+		imageZ,
+	]; // Replace with the paths to your images
 
-// 	useEffect(() => {
-// 		const imageLoaders = imagePaths.map((path) => {
-// 			const imageLoader = new Image();
-// 			imageLoader.src = path;
-// 			return new Promise((resolve) => {
-// 				imageLoader.onload = resolve;
-// 			});
-// 		});
+	useEffect(() => {
+		const imageLoaders = imagePaths.map((path) => {
+			const imageLoader = new Image();
+			imageLoader.src = path;
+			return new Promise((resolve) => {
+				imageLoader.onload = resolve;
+			});
+		});
 
-// 		Promise.all(imageLoaders).then(() => {
-// 			setIsLoading(false);
-// 		});
-// 	}, []);
+		Promise.all(imageLoaders).then(() => {
+			setIsLoading(false);
+		});
+	}, []);
 
-// 	return (
-// 		<div>
-// 			{isLoading ? (
-// 				<LoadingPage />
-// 			) : (
-// 				<div>
-// 					<h2>Images Loaded</h2>
-// 					{/* Render your images here */}
-// 					{imagePaths.map((path, index) => (
-// 						<img key={index} src={path} alt={`Image ${index}`} />
-// 					))}
-// 				</div>
-// 			)}
-// 		</div>
-// 	);
-// };
+	return (
+		<div>
+			{isLoading ? (
+				<LoadingPage />
+			) : (
+				<div>
+					<h2>Images Loaded</h2>
+					{/* Render your images here */}
+					{imagePaths.map((path, index) => (
+						<img key={index} src={path} alt={`Image ${index}`} />
+					))}
+				</div>
+			)}
+		</div>
+	);
+};
