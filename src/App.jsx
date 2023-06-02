@@ -9,10 +9,10 @@ import imageZ from "./assets/images/house3.jpeg";
 function App() {
 	return (
 		<>
-			{/* <Navbar />
+			<Navbar />
 			<Landing />
-			<Footer /> */}
-			<MyComponent />
+			<Footer />
+			{/* <MyComponent /> */}
 		</>
 	);
 }
