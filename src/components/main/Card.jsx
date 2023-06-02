@@ -10,7 +10,8 @@ export function Card({ data }) {
 						src={data.image}
 						alt="Deluxe Room"
 						className="scale-110 transition-all duration-300 w-full hover:scale-125"
-						draggable={false} />
+						draggable={false}
+					/>
 				</div>
 				<div className="p-3 divide-y">
 					<div className="flex items-center justify-between">
@@ -18,8 +19,8 @@ export function Card({ data }) {
 							{data.title}
 						</p>
 						<div className="flex items-center gap-1">
-							{data.ratings.map((rating) => (
-								<div>
+							{data.ratings.map((rating, index) => (
+								<div key={index}>
 									{rating ? (
 										<StarIcon className="w-4 h-4 text-teal-500" />
 									) : (
@@ -32,8 +33,8 @@ export function Card({ data }) {
 					<div className="mt-2 py-4 pb-2 flex justify-between text-teal-700 items-center">
 						<p className="font-bold">${data.price}/Night</p>
 						<div className="flex gap-3">
-							{data.utilities.map(Utility => (
-								<div className="w-fit rounded-full p-1 text-teal-500 flex items-center justify-center bg-teal-900">
+							{data.utilities.map((Utility,index) => (
+								<div key={index} className="w-fit rounded-full p-1 text-teal-500 flex items-center justify-center bg-teal-900">
 									<Utility className="w-4 h-4 text-teal-100 fill-teal-100" />
 								</div>
 							))}

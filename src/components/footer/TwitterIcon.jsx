@@ -1,4 +1,3 @@
-/* <p className="footer__copyright">&copy; 2022 Mesto Russia</p> */
 export function TwitterIcon({ className }) {
 	return (
 		<svg

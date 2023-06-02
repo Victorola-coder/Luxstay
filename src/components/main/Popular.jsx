@@ -122,7 +122,7 @@ export function Popular() {
 						</button>
 					</div>
 					{cards.map((card) => (
-						<SwiperSlide className="max-w-md h-full">
+						<SwiperSlide className="max-w-md h-full" key={card.id}>
 							<Card data={card} />
 						</SwiperSlide>
 					))}

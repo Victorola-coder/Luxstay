@@ -38,13 +38,13 @@ export function CallToAction({}) {
 									<PoolIcon className="w-6 h-6" />
 									<span className="font-bold">Pool</span>
 								</div>
-								<button className="bg-teal-500 text-teal-900 p-3 px-10 max-md:hidden md:block">
+								<button className="bg-teal-200 text-teal-900 p-3 px-10 max-md:hidden md:block">
 									<MagnifyingGlassIcon className="h-6 w-6" />
 								</button>
 							</div>
 						</div>
 					</div>
-					<div className="overflow-hidden w-full">
+					<div className="overflow-hidden">
 						<img
 							src={preferenceImg1}
 							alt=""
