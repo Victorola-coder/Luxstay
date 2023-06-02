@@ -3,22 +3,40 @@
 @tailwind variants;
 @tailwind utilities;
 
-.swiper-pagination{
+.swiper-pagination {
 	all: unset !important;
 	display: hidden !important;
 }
 
-.swiper-button-prev{
+.swiper-button-prev {
 	all: unset !important;
 	display: hidden !important;
 }
 
-.swiper-button-next{
+.swiper-button-next {
 	all: unset !important;
 	display: hidden !important;
 }
 
-.swiper-button-next::after, .swiper-button-prev::after, .swiper-pagination-fraction > *, .swiper-pagination-fraction {
+.swiper-button-next::after,
+.swiper-button-prev::after,
+.swiper-pagination-fraction > *,
+.swiper-pagination-fraction {
 	all: unset !important;
 	display: none !important;
+}
+
+@layer base {
+	.loadingAnimation {
+		animation: loading 5s linear;
+	}
+}
+
+@keyframes loading {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 99%;
+	}
 }

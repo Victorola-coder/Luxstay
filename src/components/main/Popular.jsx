@@ -13,7 +13,7 @@ import { FoodIcons } from "./FoodIcons";
 import { Card } from "./Card";
 import { BedIcon } from "./BedIcon";
 
-export function Popular() {
+export function Popular({deluxe1, executive2, standard1}) {
 	const cards = [
 		{
 			id: 1,
