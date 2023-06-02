@@ -27,7 +27,7 @@ export function Hero({ heroImage }) {
 						quis.
 					</p>
 					<div className="md:mt-6 max-md:mt-3">
-						<button className="flex items-center gap-2 hover:bg-white hover:border w-fit rounded-full pr-3 pl-1 py-0.5 transition-all duration-300 group max-md:mx-auto">
+						<button className="flex items-center gap-2 bg-white border w-fit rounded-full pr-3 pl-1 py-0.5 transition-all duration-300 group max-md:mx-auto hover:scale-110">
 							<div className="flex items-center justify-center p-1 text-teal-500 rounded-full w-fit">
 								<PlayIcon className="w-6 h-6" />
 							</div>
