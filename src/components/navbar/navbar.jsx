@@ -52,13 +52,20 @@ export default function Navbar() {
 		<header className="w-full">
 			<div className="bg-white w-full relative z-30">
 				<nav className="container mx-auto w-full p-3 flex items-center justify-between relative z-30 bg-white py-5">
-					<NavbarToggler setIsOpened={setIsOpened} isOpened={isOpened} />
+					<NavbarToggler
+						setIsOpened={setIsOpened}
+						isOpened={isOpened}
+					/>
 					<NavBrand logo={logo} />
 					<NavLinkLarge navLinks={navLinks} />
 					<CartAndLogin isAtBottom={isAtBottom} />
 				</nav>
 			</div>
-			<MobileNavDrawer isOpened={isOpened} navLinks={navLinks} />
+			<MobileNavDrawer
+				isOpened={isOpened}
+				navLinks={navLinks}
+				setIsOpened={setIsOpened}
+			/>
 		</header>
 	);
 }
