@@ -26,7 +26,7 @@ export default function LoadingScreen() {
 	}, []);
 
 	return (
-		<section className="flex flex-col items-center justify-center min-h-screen gap-5 px-3 bg-teal-100/20">
+		<section className="flex flex-col items-center justify-center min-h-screen gap-5 px-3 bg-teal-100/20 fixed inset-0">
 			<div>
 				<img src={logo} alt="" className="w-28 h-28 animate-pulse" />
 			</div>

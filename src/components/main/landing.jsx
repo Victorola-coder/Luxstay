@@ -35,7 +35,6 @@ export default function Landing() {
 		<LoadingScreen />
 	) : (
 		<>
-			<Navbar />
 			<main className="my-6 overflow-x-hidden px-3">
 				<Hero heroImage={heroImage} />
 				<Popular
@@ -45,7 +44,6 @@ export default function Landing() {
 				/>
 				<CallToAction />
 			</main>
-			<Footer />
 		</>
 	);
 }
