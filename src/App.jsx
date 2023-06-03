@@ -11,12 +11,14 @@ function App() {
 	return (
 		<>
 			<Navbar />
-			<Routes>
-				<Route Component={Landing} path="/" />
-				<Route Component={Bookings} path="/bookings" />
-				<Route Component={BookRoom} path="/bookings/:id" />
-				<Route path="*" Component={Error404Page} />
-			</Routes>
+			<main className="flex-grow">
+				<Routes>
+					<Route Component={Landing} path="/" />
+					<Route Component={Bookings} path="/bookings" />
+					<Route Component={BookRoom} path="/bookings/:id" />
+					<Route path="*" Component={Error404Page} />
+				</Routes>
+			</main>
 			<Footer />
 		</>
 	);

@@ -8,7 +8,7 @@ import { TwitterIcon } from "../icons/TwitterIcon";
 export default function Footer() {
 	const [toggledFooter, setToggledFooter] = useState(true);
 	return (
-		<footer className="bg-teal-900 relative">
+		<footer className="flex-shrink-0 bg-teal-900 relative">
 			<button
 				onClick={() => setToggledFooter(!toggledFooter)}
 				className={` bg-teal-900 w-fit p-3 rounded-full absolute -top-5 left-3 text-teal-200 transition-all duration-300 ${
