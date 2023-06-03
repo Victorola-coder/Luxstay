@@ -6,6 +6,7 @@ import Bookings from "./components/main/bookings/booking";
 import Cart from "./components/main/cart/cart";
 import Landing from "./components/main/landing/landing";
 import Navbar from "./components/navbar/navbar";
+import Faqs from "./components/main/cart/faqs";
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 					<Route Component={Bookings} path="/bookings" />
 					<Route Component={BookRoom} path="/bookings/:id" />
 					<Route Component={Cart} path="/cart" />
+					<Route Component={Faqs} path="/faqs" />
 					<Route path="*" Component={Error404Page} />
 				</Routes>
 			</main>

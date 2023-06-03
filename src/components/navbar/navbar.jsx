@@ -16,6 +16,10 @@ export default function Navbar() {
 			href: "/bookings",
 		},
 		{
+			text: "FAQs",
+			href: "/faqs",
+		},
+		{
 			text: "Facilities",
 			href: "/facilities",
 		},
@@ -26,10 +30,6 @@ export default function Navbar() {
 		{
 			text: "Contact",
 			href: "/contact",
-		},
-		{
-			text: "FAQs",
-			href: "/faqs",
 		},
 	];
 
