@@ -9,7 +9,7 @@ import {
 	TvIcon,
 	WifiIcon,
 } from "@heroicons/react/24/solid";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { BedIcon } from "../../icons/BedIcon";
@@ -93,15 +93,34 @@ export default function Bookings() {
 	// 	};
 	// }, []);
 
-	return (
+	const [isLoading, setIsLoading] = useState(true);
+	const imagePaths = [deluxe1, executive2, standard1]; // Replace with the paths to your images
+
+	useEffect(() => {
+		const imageLoaders = imagePaths.map((path) => {
+			const imageLoader = new Image();
+			imageLoader.src = path;
+			return new Promise((resolve) => {
+				imageLoader.onload = resolve;
+			});
+		});
+
+		Promise.all(imageLoaders).then(() => {
+			setIsLoading(false);
+		});
+	}, []);
+
+	return isLoading ? (
+		<LoadingScreen />
+	) : (
 		<main className="container mx-auto">
-      <section className="grid md:grid-cols-3 gap-y-6 mb-10 mt-5 max-md:grid-cols-2 max-sm:grid-cols-1">
-        {cards.map((card, index) => (
-          <div className="w-fit mx-auto" key={index}>
-              <Card data={card} />
-          </div>
-        ))}
-      </section>
+			<section className="grid md:grid-cols-3 gap-y-6 mb-10 mt-5 max-md:grid-cols-2 max-sm:grid-cols-1">
+				{cards.map((card, index) => (
+					<div className="w-fit mx-auto" key={index}>
+						<Card data={card} />
+					</div>
+				))}
+			</section>
 		</main>
 	);
 }
