@@ -15,7 +15,7 @@ import {
 import { useEffect, useState } from "react";
 import { FoodIcon } from "../../icons/FoodIcons";
 import { BedIcon } from "../../icons/BedIcon";
-import { StarOutline } from "heroicons-react";
+import { StarIcon as StarOutline } from "@heroicons/react/24/outline";
 
 export default function BookRoom() {
 	const { id } = useParams();
@@ -184,7 +184,7 @@ export default function BookRoom() {
 							<h1 className="font-bold text-2xl max-md:hidden">
 								${productData.price}/Night
 							</h1>
-							<div className="flex gap-1 max-md:w-full max-w-md max-md:mx-auto">
+							<div className="flex gap-1 max-md:w-full max-w-md max-mdmx-auto">
 								<button
 									onClick={subtract}
 									className="bg-teal-900 text-teal-200 rounded-lg p-1 transition-all duration-300 active:scale-75"
