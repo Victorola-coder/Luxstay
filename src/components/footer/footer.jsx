@@ -1,9 +1,9 @@
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import React, { useState } from "react";
-import { FacebookIcon } from "./FacebookIcon";
-import { InstagramIcon } from "./InstagramIcon";
-import { TwitterIcon } from "./TwitterIcon";
 import logo from "../../assets/images/logo.png";
+import { FacebookIcon } from "../icons/FacebookIcon";
+import { InstagramIcon } from "../icons/InstagramIcon";
+import { TwitterIcon } from "../icons/TwitterIcon";
 
 export default function Footer() {
 	const [toggledFooter, setToggledFooter] = useState(true);

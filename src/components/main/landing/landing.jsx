@@ -2,16 +2,14 @@ import { useEffect, useState } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import heroImage from "../../assets/images/house2.png";
+import heroImage from "../../../assets/images/house2.png";
 import { CallToAction } from "./CallToAction";
 import { Hero } from "./Hero";
 import { Popular } from "./Popular";
-import deluxe1 from "../../assets/images/deluxeroom1.jpg";
-import executive2 from "../../assets/images/executivelounge2.jpg";
-import standard1 from "../../assets/images/standardroom1.jpg";
-import LoadingScreen from "../../utilities/loadingScreen";
-import Navbar from "../navbar/navbar";
-import Footer from "../footer/footer";
+import deluxe1 from "../../../assets/images/deluxeroom1.jpg";
+import executive2 from "../../../assets/images/executivelounge2.jpg";
+import standard1 from "../../../assets/images/standardroom1.jpg";
+import LoadingScreen from "../../../utilities/loadingScreen";
 
 export default function Landing() {
 	const [isLoading, setIsLoading] = useState(true);

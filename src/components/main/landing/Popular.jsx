@@ -1,19 +1,18 @@
 import {
 	ChevronLeftIcon,
-	ChevronRightIcon, TvIcon,
-	WifiIcon
+	ChevronRightIcon,
+	TvIcon,
+	WifiIcon,
 } from "@heroicons/react/24/solid";
 import { useEffect } from "react";
 import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import deluxe1 from "../../assets/images/deluxeroom1.jpg";
-import executive2 from "../../assets/images/executivelounge2.jpg";
-import standard1 from "../../assets/images/standardroom1.jpg";
-import { FoodIcons } from "./FoodIcons";
-import { Card } from "./Card";
-import { BedIcon } from "./BedIcon";
+import { BedIcon } from "../../icons/BedIcon";
+import { Card } from "../../../utilities/Card";
+import { FoodIcon } from "../../icons/FoodIcons";
+import { NavLink } from "react-router-dom";
 
-export function Popular({deluxe1, executive2, standard1}) {
+export function Popular({ deluxe1, executive2, standard1 }) {
 	const cards = [
 		{
 			id: 1,
@@ -21,7 +20,7 @@ export function Popular({deluxe1, executive2, standard1}) {
 			title: "Deluxe Room",
 			ratings: [true, true, true, true, false],
 			price: 300,
-			utilities: [WifiIcon, TvIcon, FoodIcons, BedIcon],
+			utilities: [WifiIcon, TvIcon, FoodIcon, BedIcon],
 			available: true,
 		},
 		{
@@ -30,7 +29,7 @@ export function Popular({deluxe1, executive2, standard1}) {
 			title: "Executive Lounge",
 			ratings: [true, true, true, true, true],
 			price: 500,
-			utilities: [WifiIcon, TvIcon, FoodIcons],
+			utilities: [WifiIcon, TvIcon, FoodIcon],
 			available: true,
 		},
 		{
@@ -39,7 +38,7 @@ export function Popular({deluxe1, executive2, standard1}) {
 			title: "Standard Room",
 			ratings: [true, true, true, false, false],
 			price: 200,
-			utilities: [TvIcon, FoodIcons, BedIcon],
+			utilities: [TvIcon, FoodIcon, BedIcon],
 			available: true,
 		},
 		{
@@ -48,7 +47,7 @@ export function Popular({deluxe1, executive2, standard1}) {
 			title: "Deluxe Room",
 			ratings: [true, true, true, true, false],
 			price: 300,
-			utilities: [WifiIcon, TvIcon, FoodIcons, BedIcon],
+			utilities: [WifiIcon, TvIcon, FoodIcon, BedIcon],
 			available: true,
 		},
 		{
@@ -57,7 +56,7 @@ export function Popular({deluxe1, executive2, standard1}) {
 			title: "Executive Lounge",
 			ratings: [true, true, true, true, true],
 			price: 500,
-			utilities: [WifiIcon, TvIcon, FoodIcons],
+			utilities: [WifiIcon, TvIcon, FoodIcon],
 			available: true,
 		},
 		{
@@ -66,7 +65,7 @@ export function Popular({deluxe1, executive2, standard1}) {
 			title: "Standard Room",
 			ratings: [true, true, true, false, false],
 			price: 200,
-			utilities: [TvIcon, FoodIcons, BedIcon],
+			utilities: [TvIcon, FoodIcon, BedIcon],
 			available: true,
 		},
 	];
@@ -97,9 +96,12 @@ export function Popular({deluxe1, executive2, standard1}) {
 					Our Most Popular Hotels
 				</h1>
 				<div className="max-md:hidden">
-					<button className="bg-teal-200/20 text-teal-900 font-bold border-2 border-teal-200 hover:bg-teal-200/40 transition-all duration-300 rounded-full px-6 py-1 max-md:w-[80%] active:scale-90">
+					<NavLink
+						to="/bookings"
+						className="bg-teal-200/20 text-teal-900 font-bold border-2 border-teal-200 hover:bg-teal-200/40 transition-all duration-300 rounded-full px-6 py-1 max-md:w-[80%] active:scale-90"
+					>
 						View all
-					</button>
+					</NavLink>
 				</div>
 			</div>
 			<div className="mt-6">
@@ -135,9 +137,12 @@ export function Popular({deluxe1, executive2, standard1}) {
 					</div>
 				</Swiper>
 				<div className="w-full max-md:flex justify-center px-3 pt-6 md:hidden">
-					<button className="bg-teal-200/20 text-teal-900 font-bold border-2 border-teal-200 hover:bg-teal-200/40 transition-all duration-300 rounded-full px-6 py-1 max-md:w-[80%]s active:scale-90 w-full">
+					<NavLink
+						to="/bookings"
+						className="bg-teal-200/20 text-teal-900 font-bold border-2 border-teal-200 hover:bg-teal-200/40 transition-all duration-300 rounded-full px-6 py-1 max-md:w-[80%]s active:scale-90 w-full text-center"
+					>
 						View all
-					</button>
+					</NavLink>
 				</div>
 			</div>
 		</section>

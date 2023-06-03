@@ -13,23 +13,23 @@ export default function Navbar() {
 	const navLinks = [
 		{
 			text: "Bookings",
-			href: "#",
+			href: "/bookings",
 		},
 		{
 			text: "Facilities",
-			href: "#",
+			href: "/facilities",
 		},
 		{
 			text: "About",
-			href: "#",
+			href: "/about",
 		},
 		{
 			text: "Contact",
-			href: "#",
+			href: "/contact",
 		},
 		{
 			text: "FAQs",
-			href: "#",
+			href: "/faqs",
 		},
 	];
 

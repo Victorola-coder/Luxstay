@@ -6,7 +6,7 @@ export function Hero({ heroImage }) {
 			<section className="container mx-auto overflow-x-hidden border bg-tealBG/30 rounded-t-3xl rounded-b-md">
 			<div className="flex justify-between max-md:flex-col-reverse md:flex-row">
 				<div className="w-full px-3 pb-6 md:hidden">
-					<div className="flex flex-row w-full max-w-md mx-auto overflow-hidden transition-all duration-300 bg-white border-2 rounded-full border-teal-400/20 focus-within:border-teal-400/50">
+					<div className="max-md:flex flex-row w-full max-w-md mx-auto overflow-hidden transition-all duration-300 bg-white border-2 rounded-full border-teal-400/20 focus-within:border-teal-400/50">
 						<input
 							type="text"
 							className="w-full px-3 py-3 font-bold text-teal-900 focus:outline-none placeholder:font-bold"
@@ -44,7 +44,7 @@ export function Hero({ heroImage }) {
 						className="w-full max-w-xl transition-all duration-300 bg-tealBG rounded-tr-3xl hover:scale-110" />
 				</div>
 			</div>
-			<div className="absolute left-0 right-0 flex justify-center w-full bottom-40 max-md:hidden md:block md:z-20 max-md:-z-10">
+			<div className="absolute left-0 right-0 md:flex justify-center w-full bottom-40 max-md:hidden md:z-20 max-md:-z-10">
 				<div className="flex flex-row w-full max-w-md mx-auto overflow-hidden transition-all duration-300 bg-white border-2 rounded-full border-teal-400/20 focus-within:border-teal-400/50">
 					<input
 						type="text"

@@ -1,7 +1,7 @@
-import preferenceImg1 from "../../assets/images/house5.jpg";
+import preferenceImg1 from "../../../assets/images/house5.jpg";
 import { MagnifyingGlassIcon, WifiIcon } from "@heroicons/react/24/solid";
-import { BedIcon } from "./BedIcon";
-import { PoolIcon } from "./PoolIcon";
+import { BedIcon } from "../../icons/BedIcon";
+import { PoolIcon } from "../../icons/PoolIcon";
 
 export function CallToAction({}) {
 	return (
