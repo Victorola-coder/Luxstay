@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export function CartCards({ data, itemId, nightsCount }) {
 	return (
 		<Link to={`/bookings/${itemId}`}>
-			<div className="border rounded-lg pr-2 flex  gap-6 max-w-md h-full">
+			<div className="border-2 rounded-lg pr-2 flex  gap-6 max-w-md h-full border-teal-200/50">
 				<div className="rounded-tl-lg overflow-hidden rounded-bl-lg border-r-2 border-teal-500 w-full">
 					<img
 						src={data[itemId].image}

@@ -1,12 +1,11 @@
+import { ArrowLeftIcon } from "@heroicons/react/24/solid";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import Footer from "./components/footer/footer";
+import BookRoom from "./components/main/bookingDetailed/bookRoom";
+import Bookings from "./components/main/bookings/booking";
+import Cart from "./components/main/cart/cart";
 import Landing from "./components/main/landing/landing";
 import Navbar from "./components/navbar/navbar";
-import LoadingScreen from "./utilities/loadingScreen";
-import Bookings from "./components/main/bookings/booking";
-import BookRoom from "./components/main/bookingDetailed/bookRoom";
-import { ArrowLeftIcon } from "@heroicons/react/24/solid";
-import Cart from "./components/main/cart/cart";
 
 function App() {
 	return (
