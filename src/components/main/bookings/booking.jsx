@@ -2,19 +2,15 @@ import deluxe1 from "../../../assets/images/deluxeroom1.jpg";
 import executive2 from "../../../assets/images/executivelounge2.jpg";
 import standard1 from "../../../assets/images/standardroom1.jpg";
 
-import LoadingScreen from "../../../utilities/loadingScreen";
 import {
-	ChevronLeftIcon,
-	ChevronRightIcon,
-	TvIcon,
-	WifiIcon,
+  TvIcon,
+  WifiIcon
 } from "@heroicons/react/24/solid";
 import { useEffect, useState } from "react";
-import { Navigation, Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Card } from "../../../utilities/Card";
+import LoadingScreen from "../../../utilities/loadingScreen";
 import { BedIcon } from "../../icons/BedIcon";
 import { FoodIcon } from "../../icons/FoodIcons";
-import { Card } from "../../../utilities/Card";
 
 export default function Bookings() {
 	const cards = [

@@ -1,5 +1,6 @@
 import { StarIcon as StarOutline } from "@heroicons/react/24/outline";
 import { StarIcon } from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom";
 
 export function Card({ data }) {
 	return (
@@ -41,9 +42,11 @@ export function Card({ data }) {
 						</div>
 					</div>
 					<div className="mt-2 pt-4 w-full">
-						<button className="bg-teal-200 w-full rounded-full text-teal-900 py-1 font-bold border-2 border-teal-300 transition-all duration-300 active:scale-95">
-							Book Now
-						</button>
+						<Link to={`/bookings/${data.id}`}>
+							<div className="bg-teal-200 w-full rounded-full text-teal-900 py-1 font-bold border-2 border-teal-300 transition-all duration-300 active:scale-95 text-center">
+								Book Now
+							</div>
+						</Link>
 					</div>
 				</div>
 			</div>
