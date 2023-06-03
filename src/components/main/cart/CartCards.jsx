@@ -9,17 +9,17 @@ export function CartCards({ data, itemId, nightsCount }) {
 			<div className="border-2 rounded-lg pr-2 flex  gap-6 max-w-md h-full border-teal-200/50">
 				<div className="rounded-tl-lg overflow-hidden rounded-bl-lg border-r-2 border-teal-500 w-full">
 					<img
-						src={data[itemId].image}
+						src={data[itemId - 1].image}
 						alt=""
 						className="scale-110 object-cover h-full transition-all duration-300 hover:scale-125"
 					/>
 				</div>
 				<div className="w-full space-y-3 py-2">
 					<h1 className="font-bold md:text-2xl text-teal-900 w-full max-md:text-lg">
-						{data[itemId].title}
+						{data[itemId - 1].title}
 					</h1>
 					<div className="flex">
-						{data[itemId].ratings.map((rating, index) => (
+						{data[itemId - 1].ratings.map((rating, index) => (
 							<div key={index}>
 								{rating ? (
 									<StarIcon className="w-4 h-4 text-teal-500" />
@@ -30,9 +30,11 @@ export function CartCards({ data, itemId, nightsCount }) {
 						))}
 					</div>
 					<div className="text-teal-900 font-medium text-sm flex flex-col gap-2">
-						price: ${data[itemId].price}
+						price: ${data[itemId - 1].price}
 						<div>{nightsCount} nights</div>
-						<div>Total: ${data[itemId].price * nightsCount}</div>
+						<div>
+							Total: ${data[itemId - 1].price * nightsCount}
+						</div>
 					</div>
 				</div>
 			</div>
