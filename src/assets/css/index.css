@@ -30,6 +30,12 @@
 	.loadingAnimation {
 		animation: loading 5s linear;
 	}
+	.formSlide {
+		animation: formSlide 0.3s linear forwards;
+	}
+	.emptyCart {
+		animation: emptyCart .5s linear forwards;
+	}
 }
 
 @keyframes loading {
@@ -38,5 +44,23 @@
 	}
 	100% {
 		width: 99%;
+	}
+}
+
+@keyframes formSlide {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes emptyCart {
+	from {
+		transform: 0;
+	}
+	to {
+		transform: rotate(90deg);
 	}
 }

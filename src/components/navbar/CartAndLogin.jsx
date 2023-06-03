@@ -1,15 +1,16 @@
 import React from "react";
 import { ShoppingCartIcon } from "@heroicons/react/24/solid";
+import { NavLink } from "react-router-dom";
 
 export function CartAndLogin({ isAtBottom }) {
 	return (
 		<div className="max-md:relative z-10 flex items-center gap-6 text-teal-900">
-			<a
-				href="#"
+			<NavLink
+				to="/cart"
 				className={`md:bg-teal-300/10 rounded-full md:p-2 transition-all duration-300 md:hover:bg-teal-300/30 max-md:fixed bottom-4 right-4 max-md:bg-teal-300/90 max-md:hover:bg-teal-300/100 max-md:p-4 ${isAtBottom ? "bg-white" : ""} `}
 			>
 				<ShoppingCartIcon className="md:h-4 md:w-4 max-md:h-6 max-md:w-6" />
-			</a>
+			</NavLink>
 			<button className="bg-teal-300 transition-all duration-300 hover:bg-teal-400 font-bold text-sm rounded-full px-6 py-1 active:scale-95">
 				Login
 			</button>

@@ -6,6 +6,7 @@ import LoadingScreen from "./utilities/loadingScreen";
 import Bookings from "./components/main/bookings/booking";
 import BookRoom from "./components/main/bookingDetailed/bookRoom";
 import { ArrowLeftIcon } from "@heroicons/react/24/solid";
+import Cart from "./components/main/cart/cart";
 
 function App() {
 	return (
@@ -16,6 +17,7 @@ function App() {
 					<Route Component={Landing} path="/" />
 					<Route Component={Bookings} path="/bookings" />
 					<Route Component={BookRoom} path="/bookings/:id" />
+					<Route Component={Cart} path="/cart" />
 					<Route path="*" Component={Error404Page} />
 				</Routes>
 			</main>

@@ -19,7 +19,7 @@ export default function Footer() {
 			</button>
 			<div className="container mx-auto p-3 pb-0">
 				<div className="font-bold text-2xl max-md:text-center text-teal-100 pb-4 md:px-10">
-					Accommodation
+					WanderInn
 				</div>
 				<div className="divide-y-4 divide-teal-200/30">
 					<div className={`flex justify-between items-center md:flex-row max-md:flex-col gap-4 pb-4 transition-all duration-300 ${toggledFooter ? "hidden" : "block"}`}>
@@ -47,7 +47,7 @@ export default function Footer() {
 							className="w-12 h-12 bg-white rounded-full"
 						/>
 						<p className="footer__copyright">
-							&copy; 2023 Accommodation
+							&copy; 2023 WanderInn
 						</p>
 					</div>
 				</div>
