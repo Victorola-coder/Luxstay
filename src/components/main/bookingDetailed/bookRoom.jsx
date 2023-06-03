@@ -135,7 +135,7 @@ export default function BookRoom() {
 							className="w-full hover:scale-125 transition-all duration-300 scale-110"
 						/>
 					</div>
-					<div className="w-full bg-red-300s justify-betweens flex flex-col md:py-6 max-md:p-0 divide-y-4 divide-teal-900/20">
+					<div className="w-full justify-betweens flex flex-col md:py-6 max-md:p-0 divide-y-4 divide-teal-900/20">
 						<div className="flex justify-between items-center">
 							<h1 className="text-3xl font-bold text-teal-900 pb-2">
 								{productData.title}
@@ -152,7 +152,7 @@ export default function BookRoom() {
 								))}
 							</div>
 						</div>
-						<div className="text-sm font-medium pt-4 pb-2">
+						<div className="text-sm font-medium pt-4 pb-2 text-teal-900">
 							<p>
 								Lorem ipsum dolor sit, amet consectetur
 								adipisicing elit. Ipsam omnis magni, a quas
@@ -184,7 +184,7 @@ export default function BookRoom() {
 							<h1 className="font-bold text-2xl max-md:hidden">
 								${productData.price}/Night
 							</h1>
-							<div className="flex gap-1 max-md:w-full">
+							<div className="flex gap-1 max-md:w-full max-w-md max-md:mx-auto">
 								<button
 									onClick={subtract}
 									className="bg-teal-900 text-teal-200 rounded-lg p-1 transition-all duration-300 active:scale-75"
@@ -209,13 +209,13 @@ export default function BookRoom() {
 						</div>
 						<div className="py-4 flex max-md:flex-col md:flex-row gap-4">
 							<div className="w-full">
-								<button className="bg-teal-800 font-bold text-teal-100 rounded-full py-2 max-w-md w-full border-2 border-teal-500 transition-all duration-300 active:scale-90 hover:bg-teal-900 flex  justify-center items-center gap-3">
+								<button className="mx-auto bg-teal-800 font-bold text-teal-100 rounded-full py-2 max-w-md w-full border-2 border-teal-500 transition-all duration-300 active:scale-90 hover:bg-teal-900 flex  justify-center items-center gap-3">
 									<CreditCardIcon className="w-6 h-6" />
 									Check Out
 								</button>
 							</div>
 							<div className="w-full">
-								<button className="font-bold text-teal-900 rounded-full py-2 max-w-md w-full border-2 border-teal-500 flex items-center justify-center gap-3 hover:bg-teal-900 hover:text-teal-100 transition-all duration-300 active:scale-90">
+								<button className="mx-auto font-bold text-teal-900 rounded-full py-2 max-w-md w-full border-2 border-teal-500 flex items-center justify-center gap-3 hover:bg-teal-900 hover:text-teal-100 transition-all duration-300 active:scale-90">
 									<span>
 										<ShoppingCartIcon className="w-6 h-6" />
 									</span>
