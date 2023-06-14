@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import deluxe1 from "../../../assets/images/deluxeroom1.jpg";
-import executive2 from "../../../assets/images/executivelounge2.jpg";
-import standard1 from "../../../assets/images/standardroom1.jpg";
+import deluxe1 from "../../../assets/images/bed.jpg";
+import executive2 from "../../../assets/images/balcony.jpg";
+import standard1 from "../../../assets/images/room.jpg";
 import {
 	CreditCardIcon,
 	MinusIcon,

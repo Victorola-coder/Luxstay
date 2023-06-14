@@ -42,7 +42,7 @@ export function CheckOutModal({ toggleModal, modalOpened, unit }) {
 	}
 
 	return (
-		<section className="h-screen fixed z-50 inset-0 w-full flex items-center justify-center px-3">
+		<section className="h-screen fixed bg-black/50 z-50 inset-0 w-full flex items-center justify-center px-3">
 			<div
 				onClick={toggleModal}
 				className="absolute inset-0 bg-black/20 cursor-pointer"
@@ -59,7 +59,7 @@ export function CheckOutModal({ toggleModal, modalOpened, unit }) {
 						>
 							<ChevronLeftIcon className="w-6 h-6" />
 						</button>
-						<div className="w-full">WanderInn</div>
+						<div className="w-full">LuxStay</div>
 						<div
 							className={`border-2 rounded-full p-1 h-7 w-7 text-sm flex items-center justify-center ${
 								step === 1

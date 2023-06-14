@@ -6,9 +6,9 @@ import heroImage from "../../../assets/images/house2.png";
 import { CallToAction } from "./CallToAction";
 import { Hero } from "./Hero";
 import { Popular } from "./Popular";
-import deluxe1 from "../../../assets/images/deluxeroom1.jpg";
-import executive2 from "../../../assets/images/executivelounge2.jpg";
-import standard1 from "../../../assets/images/standardroom1.jpg";
+import deluxe1 from "../../../assets/images/balcony.jpg";
+import executive2 from "../../../assets/images/terrace.jpg";
+import standard1 from "../../../assets/images/room.jpg";
 import LoadingScreen from "../../../utilities/loadingScreen";
 
 export default function Landing() {

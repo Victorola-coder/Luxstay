@@ -12,6 +12,10 @@ export default function Navbar() {
 
 	const navLinks = [
 		{
+			text: "Home",
+			href: "/",
+		},
+		{
 			text: "Bookings",
 			href: "/bookings",
 		},
@@ -22,10 +26,6 @@ export default function Navbar() {
 		{
 			text: "Facilities",
 			href: "/facilities",
-		},
-		{
-			text: "About",
-			href: "/about",
 		},
 		{
 			text: "Contact",

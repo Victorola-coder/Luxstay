@@ -11,7 +11,7 @@ export function CartAndLogin({ isAtBottom }) {
 			>
 				<ShoppingCartIcon className="md:h-4 md:w-4 max-md:h-6 max-md:w-6" />
 			</NavLink>
-			<button className="bg-teal-300 transition-all duration-300 hover:bg-teal-400 font-bold text-sm rounded-full px-6 py-1 active:scale-95">
+			<button className="bg-cyan-300 transition-all duration-300 hover:bg-teal-400 font-bold text-sm rounded-full px-6 py-1 active:scale-95">
 				Login
 			</button>
 		</div>

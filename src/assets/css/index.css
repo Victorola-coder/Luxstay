@@ -3,6 +3,19 @@
 @tailwind variants;
 @tailwind utilities;
 
+/* remove number range stuff */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
 .swiper-pagination {
 	all: unset !important;
 	display: hidden !important;

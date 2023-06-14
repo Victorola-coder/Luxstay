@@ -9,7 +9,7 @@ export function Step2({ handleChange, form }) {
 					name="address"
 					id="address"
 					className="w-full rounded-md p-2 px-2 focus:outline-none border-teal-300 border-2 focus:border-teal-400 transition-colors duration-300 peer"
-					placeholder="e.g. John Doe"
+					placeholder="Zamfara, Nigeria."
 					value={form.address}
 					onChange={handleChange}
 					required />
@@ -31,7 +31,7 @@ export function Step2({ handleChange, form }) {
 						className="w-full rounded-md p-2 px-2 focus:outline-none border-teal-300 border-2 focus:border-teal-400 transition-colors duration-300 peer"
 						value={form.checkIn}
 						onChange={handleChange}
-						placeholder="e.g. johndoe@mail.com"
+						placeholder="e.g. nameee@mail.com"
 						required />
 					<label
 						className={`${form.checkIn !== ""
@@ -65,7 +65,7 @@ export function Step2({ handleChange, form }) {
 			</div>
 			<div className="relative">
 				<input
-					type="text"
+					type="number"
 					name="guestCount"
 					id="guestCount"
 					className="w-full rounded-md p-2 px-2 focus:outline-none border-teal-300 border-2 focus:border-teal-400 transition-colors duration-300 peer"

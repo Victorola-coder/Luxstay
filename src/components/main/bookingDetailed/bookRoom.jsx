@@ -10,9 +10,9 @@ import {
 } from "@heroicons/react/24/solid";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import deluxe1 from "../../../assets/images/deluxeroom1.jpg";
-import executive2 from "../../../assets/images/executivelounge2.jpg";
-import standard1 from "../../../assets/images/standardroom1.jpg";
+import deluxe1 from "../../../assets/images/bed.jpg";
+import executive2 from "../../../assets/images/balcony.jpg";
+import standard1 from "../../../assets/images/room.jpg";
 import { BedIcon } from "../../icons/BedIcon";
 import { FoodIcon } from "../../icons/FoodIcons";
 import { CheckOutModal } from "./CheckOutModal";

@@ -9,7 +9,7 @@ export function Step1({ handleChange, form }) {
 					name="name"
 					id="name"
 					className="w-full rounded-md p-2 px-2 focus:outline-none border-teal-300 border-2 focus:border-teal-400 transition-colors duration-300 peer"
-					placeholder="e.g. John Doe"
+					placeholder="e.g. sammy Larry"
 					value={form.name}
 					onChange={handleChange}
 					required />
