@@ -33,4 +33,3 @@ export function NavbarToggler({ setIsOpened, isOpened }) {
 
 
 // isOpened
-isOpened
