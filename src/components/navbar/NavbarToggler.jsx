@@ -8,14 +8,14 @@ export function NavbarToggler({ setIsOpened, isOpened }) {
 				onClick={() => setIsOpened(!isOpened)}
 			>
 				<div
-					className={`transition-all duration-300 bg-black h-0.5 w-6 ${isOpened
-							? "rotate-45 translate-y-[0.26rem]"
+					className={`transition-all duration-300 bg-black h-0.5 w-5 ${isOpened
+							? "rotate-45 translate-y-[0.26rem] w-6"
 							: "translate-y-0 rotate-0"}`} />
 				<div
 					className={`transition-all duration-300 bg-black h-0.5 w-6 ${isOpened ? "hidden" : "block"}`} />
 				<div
-					className={`transition-all duration-300 bg-black h-0.5 w-6 ${isOpened
-							? "-rotate-45 -translate-y-[0.24rem]"
+					className={`transition-all duration-300 bg-black h-0.5 w-7 ${isOpened
+							? "-rotate-45 -translate-y-[0.24rem] w-6"
 							: "translate-y-0 rotate-0"}`} />
 			</button>
 		</div>
