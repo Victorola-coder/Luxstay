@@ -31,12 +31,12 @@ export default function LoadingScreen() {
 				<div>
 					<img src={logo} alt="" className="w-28 h-28 animate-pulse" />
 				</div>
-				<div className="bg-teal-500 w-full max-w-md mx-auto  border-teal-200">
+				{/*<div className="bg-teal-500 w-full max-w-md mx-auto  border-teal-200">
 					<div className="h-0.5 font-bold text-teal-200 bg-teal-900 loadingAnimation flex items-center justify-center p-1" />
 				</div>
 				<div className='text-teal-900 font-bold -mt-3'>
 					{Math.round(progress)}%
-				</div>
+	</div>*/}
 			</section>
 		</section>
 	);
