@@ -7,6 +7,6 @@
 
 # Live Preview
 
-[Click me to View Live Site Here](https://luxstay.vercel.app/)
+[Click me to View Live Site Here](https://luxstayy.vercel.app/)
 
 <h1 align="center" > Thank you.🙇‍♀️🙏</h1>
