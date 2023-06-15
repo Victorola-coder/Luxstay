@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export function Card({ data }) {
 	return (
 		<div className="mx-2 max-w-md">
-			<div className="bg-teal-100/20 border w-fit rounded-lg overflow-hidden">
+			<div className="bg-blue-100/20 border w-fit rounded-lg overflow-hidden">
 				<div className="overflow-hidden">
 					<img
 						src={data.image}
@@ -23,27 +23,27 @@ export function Card({ data }) {
 							{data.ratings.map((rating, index) => (
 								<div key={index}>
 									{rating ? (
-										<StarIcon className="w-4 h-4 text-teal-500" />
+										<StarIcon className="w-4 h-4 text-blue-500" />
 									) : (
-										<StarOutline className="w-4 h-4 text-teal-500" />
+										<StarOutline className="w-4 h-4 text-blue-500" />
 									)}
 								</div>
 							))}
 						</div>
 					</div>
-					<div className="mt-2 py-4 pb-2 flex justify-between text-teal-700 items-center">
+					<div className="mt-2 py-4 pb-2 flex justify-between text-blue-700 items-center">
 						<p className="font-bold">${data.price}/Night</p>
 						<div className="flex gap-3">
 							{data.utilities.map((Utility,index) => (
-								<div key={index} className="w-fit rounded-full p-1 text-teal-500 flex items-center justify-center bg-teal-900">
-									<Utility className="w-4 h-4 text-teal-100 fill-teal-100" />
+								<div key={index} className="w-fit rounded-full p-1 text-blue-500 flex items-center justify-center bg-blue-900">
+									<Utility className="w-4 h-4 text-blue-100 fill-blue-100" />
 								</div>
 							))}
 						</div>
 					</div>
 					<div className="mt-2 pt-4 w-full">
 						<Link to={`/bookings/${data.id}`}>
-							<div className="bg-teal-200 w-full rounded-full text-teal-900 py-1 font-bold border-2 border-teal-300 transition-all duration-300 active:scale-95 text-center">
+							<div className="bg-blue-200 w-full rounded-full text-blue-900 py-1 font-bold border-2 border-blue-300 transition-all duration-300 active:scale-95 text-center">
 								Book Now
 							</div>
 						</Link>

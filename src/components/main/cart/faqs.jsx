@@ -29,7 +29,7 @@ export default function Faqs() {
 
 	return (
 		<section className="container mx-auto px-3 mt-6 mb-10">
-			<h1 className="text-3xl text-teal-900 font-bold text-center">
+			<h1 className="text-3xl text-blue-900 font-bold text-center">
 				FAQs
 			</h1>
 			<div>

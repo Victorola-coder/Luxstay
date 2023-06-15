@@ -1,22 +1,26 @@
 import React from "react";
-import { ShoppingCartIcon } from "@heroicons/react/24/solid";
+import { ShoppingCartIcon, UserIcon } from "@heroicons/react/24/solid";
 import { NavLink } from "react-router-dom";
 
 export function CartAndLogin({ isAtBottom }) {
 	return (
-		<div className="max-md:relative z-10 flex items-center gap-6 text-teal-900">
+		<div className="max-md:relative z-10 flex items-center gap-6 text-blue-900">
 			<NavLink
 				to="/cart"
-				className={`md:bg-teal-300/10 rounded-full md:p-2 transition-all duration-300 md:hover:bg-teal-300/30 max-md:fixed bottom-4 right-4 max-md:bg-teal-300/90 max-md:hover:bg-teal-300/100 max-md:p-4 ${isAtBottom ? "bg-white" : ""} `}
+				className={`md:bg-blue-300/10 rounded-full md:p-2 transition-all duration-300 md:hover:bg-blue-300/30 max-md:fixed bottom-4 right-4 max-md:bg-blue-300/90 max-md:hover:bg-blue-300/100 max-md:p-4 ${
+					isAtBottom ? "bg-white" : ""
+				} `}
 			>
 				<ShoppingCartIcon className="md:h-4 md:w-4 max-md:h-6 max-md:w-6" />
 			</NavLink>
-			{/*<button className="bg-cyan-300 transition-all duration-300 hover:bg-teal-400 font-bold text-sm rounded-full px-6 py-1 active:scale-95">
+			{/*<button className="bg-cyan-300 transition-all duration-300 hover:bg-blue-400 font-bold text-sm rounded-full px-6 py-1 active:scale-95">
 				Login
 	</button>*/}
-	<img 
-	className="rounded-full border-2 border-teal-300/30 h-12 w-12"
-	scr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAM1BMVEXk5ueutLfn6eqrsbTp6+zg4uOwtrnJzc/j5earsbW0uby4vcDQ09XGyszU19jd3+G/xMamCvwDAAAFLklEQVR4nO2d2bLbIAxAbYE3sDH//7WFbPfexG4MiCAcnWmnrzkjIRaD2jQMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMw5wQkHJczewxZh2lhNK/CBOQo1n0JIT74/H/qMV0Z7GU3aCcVPuEE1XDCtVLAhgtpme7H0s1N1U7QjO0L8F7llzGeh1hEG/8Lo7TUmmuSrOfns9xnGXpXxsONPpA/B6OqqstjC6Ax/0ujkNdYQQbKNi2k64qiiEZ+ohi35X+2YcZw/WujmslYewiAliVYrxgJYrdwUmwXsU+RdApUi83oNIE27YvrfB/ZPg8+BJETXnqh9CVzBbTQHgojgiCvtqU9thFJg/CKz3VIMKMEkIXxIWqIpIg2SkjYj+xC816mrJae2aiWGykxRNsW0UwiJghJDljYI5CD8GRiCtIsJxizYUPQ2pzItZy5pcisTRdk/a9m4amtNNfBuQkdVhSaYqfpNTSFGfb9GRIakrE2Pm+GFLaCQPqiu0OpWP+HMPQQcgQMiQprWXNmsVwIjQjYi/ZrhAqNTCgr2gu0Jnz85RSSjso0HkMFZ0YZjKkc26a/jlmh9JiDyDxi9oeorTYAzZkwwoMz19pzj9bnH/GP/+qbchjSGflneWYhtTuKdMOmNKZcJ5TjInQKcYXnESd/jQxy0ENpULTNGOGgxpap/oyw9pbUAqhfx2Dbkhovvfgz4iUzoM9+GlK6/Mh4q29hyC1mwro30hpVVLPF9wYQr71RazOeM5/cw81iBRD+A03aM9/C/obbrKjbYSpCmIVG3qT/Q8oeUo3Rz0IL7vI1tEbCB9pSiu8I/aV8x3Kg/BGWrWp4ZVs0nZfmAoEG4h/61yHYIJiFSl6Q0Vk6tTW1N8kYp8hdOkfHYYMXd2Qft+8CYwqYDSKvqIh+MCF8Wgca2u/cwdgeW3TtuVn6+1oBs3yLo5C2JpK6CvQzGpfUkz9UG/87gCsi5o2LIXolxN0FbwAsjOLEr+YJmXn7iR6N0BCt5p5cMxm7eAsfS+/CACQf4CTpKjzgkvr2cVarVTf96372yut7XLJ1sa7lv6VcfgYrWaxqr3Wlo1S6pvStr22sxOtTNPLzdY3nj20bPP+ejFdJYkLsjGLdtPBEbe/mr2bQKiXWJDroA+vtzc0p9aahuwqHMDYrQEXHEw9jwQl3drMpts9JBU1SdktPe5FBRdJQ6bwXBpa57ib2A8kukQDzMjh++Uo7Fo6Wd02Pkf4fknqoo4HtvAIjsqUcjx6DIPgWCaOML9rKI/oqD9/lgNrn+eF+p7j8tnzHBiR7+kdUGw/+V1Kzkc75mMy6U+FMaxjPibiM1U1uGM+puInHpmALZCgP4pt7i840MV8+0R1zPsRB6UTcqpizncYwZ89syDydfyWCwXB1l8/zRNGWbTG/GHKUm9AkxHMc/EGSk3z2+ArEhPEV5TUBLEvUGFcjEUH80J/jveTGOAJEljJbILWGQT3zRYiwuKsUXN1EEJAzBhRJFll7mBUG7KD8EqPkKekBREaL8hMDZLQSG6AQjtHPYmvTQnX0TtpC1SYCe2YdkkyLP3jj5BSbKiuR585eQhTgoje6yIb0Yb0C+mV6EYvebqw5SDy2WmubogZiF2AVxPC2FpDf8H2Q9QWo6IkjUxTWVEI3WY/wrCeSuqJ+eRWzXR/JXwgVjUMozbCOfoEZiSiKVGepqv5CJ8RyR4D7xBeamqa7z3BJ/z17JxuBPdv93d/a2Ki878MMAzDMAzDMAzDMAzDMF/KP09VUmxBAiI3AAAAAElFTkSuQmCC" />
+			<a href="#">
+				<div className="bg-blue-200 p-2 rounded-full hover:bg-blue-300 transition-all duration-300 ease-in-out">
+					<UserIcon className="h-6 w-6" />
+				</div>
+			</a>
 		</div>
 	);
 }

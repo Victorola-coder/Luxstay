@@ -88,13 +88,13 @@ export default function Cart() {
 
 	return (
 		<section className="container mx-auto px-3 mb-10">
-			<h1 className="text-center font-bold text-teal-900 text-3xl mt-6">
+			<h1 className="text-center font-bold text-blue-900 text-3xl mt-6">
 				Your Cart ({emptyStorage ? 0 : cartItems.length})
 			</h1>
 			<div className="mt-6 h-full">
 				{emptyStorage ? (
 					<div className="flex items-center justify-center h-full absolute inset-0">
-						<h1 className="text-center font-bold text-teal-900 text-3xl mt-6 flex gap-3 items-center">
+						<h1 className="text-center font-bold text-blue-900 text-3xl mt-6 flex gap-3 items-center">
 							Your Cart is Empty
 							<span className="emptyCart">:(</span>
 						</h1>

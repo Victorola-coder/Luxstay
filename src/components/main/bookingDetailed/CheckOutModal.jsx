@@ -49,12 +49,12 @@ export function CheckOutModal({ toggleModal, modalOpened, unit }) {
 			/>
 			<form
 				onSubmit={handleSubmit}
-				className="bg-white relative z-50 w-full max-w-md rounded-lg text-teal-900 divide-y-2 overflow-hidden"
+				className="bg-white relative z-50 w-full max-w-md rounded-lg text-blue-900 divide-y-2 overflow-hidden"
 			>
 				<div>
-					<div className="bg-teal-900 text-teal-200 font-bold text-center rounded-t-lg p-2.5 text-xl flex items-center justify-between">
+					<div className="bg-blue-900 text-blue-200 font-bold text-center rounded-t-lg p-2.5 text-xl flex items-center justify-between">
 						<button
-							className="bg-teal-200/20 rounded-full p-1 flex justify-center items-center hover:bg-teal-200/30 transition-all duration-300"
+							className="bg-blue-200/20 rounded-full p-1 flex justify-center items-center hover:bg-blue-200/30 transition-all duration-300"
 							onClick={() => setStep(1)}
 						>
 							<ChevronLeftIcon className="w-6 h-6" />
@@ -63,8 +63,8 @@ export function CheckOutModal({ toggleModal, modalOpened, unit }) {
 						<div
 							className={`border-2 rounded-full p-1 h-7 w-7 text-sm flex items-center justify-center ${
 								step === 1
-									? "border-l-teal-200 border-t-teal-200 border-teal-200/40"
-									: "border-teal-200"
+									? "border-l-blue-200 border-t-blue-200 border-blue-200/40"
+									: "border-blue-200"
 							} transition-all duration-300`}
 						>
 							{step}
@@ -89,7 +89,7 @@ export function CheckOutModal({ toggleModal, modalOpened, unit }) {
 						type="submit"
 						className={`${
 							formValid ? "hidden" : "block"
-						} rounded-lg w-full bg-teal-800 font-bold py-1.5 text-teal-200 hover:bg-teal-900 active:scale-90 transition-all duration-300`}
+						} rounded-lg w-full bg-blue-800 font-bold py-1.5 text-blue-200 hover:bg-blue-900 active:scale-90 transition-all duration-300`}
 					>
 						Please fill all fields
 					</button>
@@ -100,7 +100,7 @@ export function CheckOutModal({ toggleModal, modalOpened, unit }) {
 						type="submit"
 						className={`${
 							formValid ? "block" : "hidden"
-						} rounded-lg w-full bg-teal-800 font-bold py-1.5 text-teal-200 hover:bg-teal-900 active:scale-90 transition-all duration-300`}
+						} rounded-lg w-full bg-blue-800 font-bold py-1.5 text-blue-200 hover:bg-blue-900 active:scale-90 transition-all duration-300`}
 					>
 						Thank You!
 					</button>

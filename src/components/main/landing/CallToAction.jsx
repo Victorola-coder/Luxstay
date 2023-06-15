@@ -12,7 +12,7 @@ export function CallToAction({}) {
 				</h1>
 			</div>
 			<div className="mt-6">
-				<div className="w-fit bg-tealBG/20 border rounded-t-3xl rounded-b-lg flex overflow-hidden max-md:flex-col md:flex-row max-md:gap-6">
+				<div className="w-fit bg-blueBG/20 border rounded-t-3xl rounded-b-lg flex overflow-hidden max-md:flex-col md:flex-row max-md:gap-6">
 					<div className="text-slate-700 space-y-10">
 						<div className="md:space-y-16 p-12 pb-0 max-md:space-y-6">
 							<h1 className="font-medium md:text-4xl max-md:text-center max-md:text-3xl">
@@ -25,7 +25,7 @@ export function CallToAction({}) {
 							</p>
 						</div>
 						<div className="px-2">
-							<div className="bg-white divide-x-2 rounded-full flex justify-between overflow-hidden text-teal-900 fill-teal-900 border-2 border-teal-300 divide-teal-300 max-md:p-3">
+							<div className="bg-white divide-x-2 rounded-full flex justify-between overflow-hidden text-blue-900 fill-blue-900 border-2 border-blue-300 divide-blue-300 max-md:p-3">
 								<div className="flex items-center justify-center w-full gap-2">
 									<WifiIcon className="w-6 h-6" />
 									<span className="font-bold">Wifi</span>
@@ -38,7 +38,7 @@ export function CallToAction({}) {
 									<PoolIcon className="w-6 h-6" />
 									<span className="font-bold">Pool</span>
 								</div>
-								<button className="bg-teal-200 text-teal-900 p-3 px-10 max-md:hidden md:block">
+								<button className="bg-blue-200 text-blue-900 p-3 px-10 max-md:hidden md:block">
 									<MagnifyingGlassIcon className="h-6 w-6" />
 								</button>
 							</div>

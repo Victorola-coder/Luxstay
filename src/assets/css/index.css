@@ -6,15 +6,14 @@
 /* remove number range stuff */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+	-webkit-appearance: none;
+	margin: 0;
 }
 
 /* firefox */
 input[type="number"] {
-  -moz-appearance: textfield;
+	-moz-appearance: textfield;
 }
-
 
 .swiper-pagination {
 	all: unset !important;
@@ -47,7 +46,7 @@ input[type="number"] {
 		animation: formSlide 0.3s linear forwards;
 	}
 	.emptyCart {
-		animation: emptyCart .5s linear forwards;
+		animation: emptyCart 0.5s linear forwards;
 	}
 }
 
@@ -76,4 +75,12 @@ input[type="number"] {
 	to {
 		transform: rotate(90deg);
 	}
+}
+
+.colors {
+	--verdigris: #03abadff;
+	--ecru: #b9aa77ff;
+	--black: #000000ff;
+	--sandy-brown: #f2a85dff;
+	--black-2: #000000ff;
 }
