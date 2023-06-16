@@ -6,7 +6,7 @@ import { CursorCircle } from "./components/utilities";
 
 function App() {
 	return (
-		<main className="flex-grow">
+		<main className="flex-grow selection:bg-sandy-brown">
 			<CursorCircle />
 			<Navbar />
 			<Routes>
