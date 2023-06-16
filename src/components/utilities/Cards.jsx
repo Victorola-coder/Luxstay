@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 export default function Card({ route, name, price, rating, description, img }) {
 	return (
-		<Link to={route}>
 			<div className="border-2 w-full max-w-md rounded-lg border-sandy-brown/50 group overflow-hidden hover:border-sandy-brown/80 transition-all duration-300 hover:scale-105">
 				<div className="overflow-hidden w-full relative">
 					<div className="text-sm flex items-center bg-white/60 w-fit p-1 gap-1 rounded-lg absolute right-2 top-2 px-2 font-bold text-amber-900 z-20 hover:bg-white/80 transition-all duration-300 cursor-pointer group-hover:bg-white/80">
@@ -33,6 +32,5 @@ export default function Card({ route, name, price, rating, description, img }) {
 					</div>
 				</div>
 			</div>
-		</Link>
 	);
 }

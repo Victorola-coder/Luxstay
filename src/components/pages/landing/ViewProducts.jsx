@@ -2,8 +2,9 @@ import { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
-import { cards } from "./data";
+import { cards } from "../../utilities/data";
 import { Card } from "../../utilities";
+import { Link } from "react-router-dom";
 
 export function ViewProducts() {
 	useEffect(() => {
@@ -48,14 +49,9 @@ export function ViewProducts() {
 				</div>
 				{cards.map((card, index) => (
 					<SwiperSlide className="max-w-md h-full py-5" key={index}>
-						<Card
-							price={card.price}
-							description={card.details}
-							name={card.name}
-							rating={card.rating}
-							route={card.route}
-							img={card.img}
-						/>
+						<Link to={card.route}>
+							<Card {...card} />
+						</Link>
 					</SwiperSlide>
 				))}
 				<div className="absolute top-0 z-30 h-full flex items-center justify-center right-0">

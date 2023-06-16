@@ -1,20 +1,23 @@
 import { ArrowLeftIcon } from "@heroicons/react/24/solid";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import logo from "./assets/images/logo.png";
-import { Footer, Landing, Navbar } from "./components";
+import { Booking, Footer, Landing, Navbar } from "./components";
 import { CursorCircle } from "./components/utilities";
 
 function App() {
 	return (
-		<main className="flex-grow selection:bg-sandy-brown">
-			<CursorCircle />
+		<>
 			<Navbar />
-			<Routes>
-				<Route path="/" Component={Landing} />
-				<Route path="*" Component={Error404Page} />
-			</Routes>
+			<main className="flex-grow selection:bg-sandy-brown">
+				<CursorCircle />
+				<Routes>
+					<Route path="/" Component={Landing} />
+					<Route path="/bookings" Component={Booking} />
+					<Route path="*" Component={Error404Page} />
+				</Routes>
+			</main>
 			<Footer />
-		</main>
+		</>
 	);
 }
 

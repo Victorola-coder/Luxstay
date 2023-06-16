@@ -1,6 +1,6 @@
-import balcony from "../../../assets/images/balcony.jpg";
-import bed from "../../../assets/images/bed.jpg";
-import terrace from "../../../assets/images/terrace.jpg";
+import balcony from "../../assets/images/balcony.jpg";
+import bed from "../../assets/images/bed.jpg";
+import terrace from "../../assets/images/terrace.jpg";
 
 export const cards = [
     {

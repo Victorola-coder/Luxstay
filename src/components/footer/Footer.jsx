@@ -3,7 +3,7 @@ import logo from "../../assets/images/loggo.png";
 
 export default function Footer() {
 	return (
-		<footer className="bg-sandy-brown/40 py-3 px-2 text-amber-900 text-sm">
+		<footer className="bg-sandy-brown/40 py-3 px-2 text-amber-900 text-sm flex-shrink-0">
 			<div className="container mx-auto flex justify-between md:items-center max-md:flex-col md:flex-row space-y-4">
 				<div className="flex items-center gap-2 max-sm:justify-center max-sm:flex-col ">
 					<img src={logo} alt="" className="h-12 " />
