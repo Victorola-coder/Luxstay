@@ -1,4 +1,4 @@
-import { createRef, useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { BookStay } from "./BookStay";
 import { HeroComponent } from "./HeroComponent";
 import { WhatWeOffer1 } from "./WhatWeOffer1";
