@@ -20,7 +20,7 @@
 import hero1 from "../../../assets/images/room.jpg";
 export function HeroComponent() {
   return (
-    <section className="fad container mx-auto p-2 mt-6 text-amber-900">
+    <section className="fade-in container mx-auto p-2 mt-6 text-amber-900">
       <div className="flex max-md:flex-col-reverse md:flex-row justify-center gap-4 h-fit">
         <div className="w-full flex items-center">
           <div className="w-full py-3 space-y-7 h-2/3">
