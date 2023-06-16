@@ -87,6 +87,36 @@ input[type="number"] {
 	.fade-in {
 		animation: fadeIn 1s linear forwards;
 	}
+	.fade-in-2 {
+		animation: fadeIn 2s linear forwards;
+	}
+	.rotate-img {
+		animation: rotateRight 0.5s linear forwards;
+		animation-delay: 0.5s;
+	}
+
+	.scale-img {
+		animation: scaleIn 0.5s linear forwards;
+		animation-delay: 0.5s;
+	}
+}
+
+@keyframes rotateRight {
+	from {
+		@apply rotate-6;
+	}
+	to {
+		@apply rotate-0;
+	}
+}
+
+@keyframes scaleIn {
+	from {
+		@apply scale-100;
+	}
+	to {
+		@apply scale-110;
+	}
 }
 
 @keyframes loading {
