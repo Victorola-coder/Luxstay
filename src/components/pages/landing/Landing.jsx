@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import blacony from "../../../assets/images/balcony.jpg";
+import balcony from "../../../assets/images/balcony.jpg";
 
 import { HeroComponent } from "./HeroComponent";
 import { WhatWeOffer1 } from "./WhatWeOffer1";
@@ -62,7 +62,7 @@ export default function Landing() {
 					</div>
 					<div className="overflow-hidden rounded-lg bg-sandy-brown/40 p-2">
 						<img
-							src={blacony}
+							src={balcony}
 							alt=""
 							className="w-full rounded-lg h-full hover:scale-110 transition-all duration-300"
 						/>
