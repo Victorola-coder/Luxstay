@@ -2,18 +2,18 @@ import { ArrowLeftIcon } from "@heroicons/react/24/solid";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import logo from "./assets/images/logo.png";
 import { Landing, Navbar } from "./components";
+import { CursorCircle } from "./components/utilities";
 
 function App() {
 	return (
-		<>
-			<main className="flex-grow">
-				<Navbar />
-				<Routes>
-					<Route path="/" Component={Landing} />
-					<Route path="*" Component={Error404Page} />
-				</Routes>
-			</main>
-		</>
+		<main className="flex-grow">
+			<CursorCircle />
+			<Navbar />
+			<Routes>
+				<Route path="/" Component={Landing} />
+				<Route path="*" Component={Error404Page} />
+			</Routes>
+		</main>
 	);
 }
 
