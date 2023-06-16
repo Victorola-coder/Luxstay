@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import luxury from "../../../assets/images/house5.jpg";
+import { Link } from "react-router-dom";
 
 export function WhatWeOffer1() {
 	const componentRef = useRef(null);
@@ -50,9 +51,14 @@ export function WhatWeOffer1() {
 								your desires.
 							</p>
 							<div>
-								<button className="bg-sandy-brown/30 rounded-lg p-2 w-full max-w-sm mt-2 border-2 border-sandy-brown transition-all duration-300 hover:bg-sandy-brown/40 font-bold hover:shadow-lg shadow active:scale-90 hover:scale-105">
-									View
-								</button>
+								<Link
+									to="/bookings"
+									className="w-full mx-auto max-w-md"
+								>
+									<button className="bg-sandy-brown/30 rounded-lg p-2 w-full max-w-sm mt-2 border-2 border-sandy-brown transition-all duration-300 hover:bg-sandy-brown/40 font-bold hover:shadow-lg shadow active:scale-90 hover:scale-105">
+										View
+									</button>
+								</Link>
 							</div>
 						</div>
 					</div>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import hero1 from "../../../assets/images/room.jpg";
 export function HeroComponent() {
 	return (
@@ -16,9 +17,14 @@ export function HeroComponent() {
 							in the heart of Lagos.
 						</p>
 						<div>
-							<button className="bg-sandy-brown/30 rounded-lg p-2 w-full max-w-sm mt-2 border-2 border-sandy-brown transition-all duration-300 hover:bg-sandy-brown/40 font-bold hover:shadow-lg shadow active:scale-90 hover:scale-105">
-								View Here
-							</button>
+							<Link
+								to="/bookings"
+								className="w-full mx-auto max-w-md"
+							>
+								<button className="bg-sandy-brown/30 rounded-lg p-2 w-full max-w-sm mt-2 border-2 border-sandy-brown transition-all duration-300 hover:bg-sandy-brown/40 font-bold hover:shadow-lg shadow active:scale-90 hover:scale-105">
+									View Here
+								</button>
+							</Link>
 						</div>
 					</div>
 				</div>

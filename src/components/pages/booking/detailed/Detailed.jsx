@@ -5,7 +5,7 @@ import { StarIcon } from "@heroicons/react/24/solid";
 
 export default function Detailed() {
 	const { id } = useParams();
-	const data = cards[id];
+	const data = cards[id - 1];
 	return (
 		<section className="container px-2 mx-auto my-10">
 			<div className="flex gap-8 max-md:flex-col m-2">
@@ -37,8 +37,12 @@ export default function Detailed() {
 						</div>
 						<div className="my-6 font-bold">
 							<div className="flex items-center gap-2 max-md:flex-col">
-								<button className="shadow-lg hover:shadow-xl active:scale-90 border-2 border-verdigris bg-verdigris/50 rounded-lg p-2 text-emerald-900 transition-all duration-300 hover:bg-verdigris/30 w-full max-w-md">Add to Cart</button>
-								<button className="shadow-lg hover:shadow-xl active:scale-90 border-2 border-amber-600 bg-sandy-brown/90 rounded-lg p-2 text-amber-900 transition-all duration-300 hover:bg-sandy-brown/70 w-full max-w-md">Book Now</button>
+								<button className="shadow-lg hover:shadow-xl active:scale-90 border-2 border-verdigris bg-verdigris/50 rounded-lg p-2 text-emerald-900 transition-all duration-300 hover:bg-verdigris/30 w-full max-w-md">
+									Add to Cart
+								</button>
+								<button className="shadow-lg hover:shadow-xl active:scale-90 border-2 border-amber-600 bg-sandy-brown/90 rounded-lg p-2 text-amber-900 transition-all duration-300 hover:bg-sandy-brown/70 w-full max-w-md">
+									Book Now
+								</button>
 							</div>
 						</div>
 					</div>

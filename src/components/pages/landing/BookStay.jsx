@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import balcony from "../../../assets/images/balcony.jpg";
+import { Link } from "react-router-dom";
 
 export function BookStay() {
 	const componentRef = useRef(null);
@@ -49,9 +50,14 @@ export function BookStay() {
 								meets tranquility in perfect harmony.
 							</p>
 							<div>
-								<button className="bg-sandy-brown/30 rounded-lg p-2 w-full max-w-sm mt-2 border-2 border-sandy-brown transition-all duration-300 hover:bg-sandy-brown/40 font-bold hover:shadow-lg shadow active:scale-90 hover:scale-105">
-									View More
-								</button>
+								<Link
+									to="/bookings"
+									className="w-full mx-auto max-w-md"
+								>
+									<button className="bg-sandy-brown/30 rounded-lg p-2 w-full max-w-sm mt-2 border-2 border-sandy-brown transition-all duration-300 hover:bg-sandy-brown/40 font-bold hover:shadow-lg shadow active:scale-90 hover:scale-105">
+										View More
+									</button>
+								</Link>
 							</div>
 						</div>
 					</div>

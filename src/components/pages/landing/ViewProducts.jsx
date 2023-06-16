@@ -49,7 +49,7 @@ export function ViewProducts() {
 				</div>
 				{cards.map((card, index) => (
 					<SwiperSlide className="max-w-md h-full py-5" key={index}>
-						<Link to={card.route}>
+						<Link to={`/bookings/${index + 1}`}>
 							<Card {...card} />
 						</Link>
 					</SwiperSlide>
@@ -63,9 +63,11 @@ export function ViewProducts() {
 				</div>
 			</Swiper>
 			<div className="flex justify-center mt-6">
-				<button className="w-full bg-sandy-brown/30 white px-4 py-2 rounded-md shadow-md font-bold border-2 border-sandy-brown/40 text-amber-900 max-w-md hover:bg-sandy-brown/50 transition-all duration-300 active:scale-90">
-					View More...
-				</button>
+				<Link to="/bookings" className="w-full mx-auto max-w-md">
+					<button className="w-full bg-sandy-brown/30 white px-4 py-2 rounded-md shadow-md font-bold border-2 border-sandy-brown/40 text-amber-900 max-w-md hover:bg-sandy-brown/50 transition-all duration-300 active:scale-90">
+						View More...
+					</button>
+				</Link>
 			</div>
 		</section>
 	);
