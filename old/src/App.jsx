@@ -1,17 +1,29 @@
 import { ArrowLeftIcon } from "@heroicons/react/24/solid";
 import { Route, Routes, useNavigate } from "react-router-dom";
-import logo from "./assets/images/logo.png";
-import { Navbar } from "./components";
+import Footer from "./components/footer/footer";
+import BookRoom from "./components/main/bookingDetailed/bookRoom";
+import Bookings from "./components/main/bookings/booking";
+import Cart from "./components/main/cart/cart";
+import Landing from "./components/main/landing/landing";
+import Navbar from "./components/navbar/navbar";
+import Faqs from "./components/main/cart/faqs";
+import logo from "./assets/images/logo.png"
 
 function App() {
   return (
     <>
+      <Navbar />
       <main className="flex-grow">
-        <Navbar />
-        {/* <Routes>
+        <Routes>
+          <Route Component={Landing} path="/" />
+          <Route Component={Bookings} path="/bookings" />
+          <Route Component={BookRoom} path="/bookings/:id" />
+          <Route Component={Cart} path="/cart" />
+          <Route Component={Faqs} path="/faqs" />
           <Route path="*" Component={Error404Page} />
-        </Routes> */}
+        </Routes>
       </main>
+      <Footer />
     </>
   );
 }

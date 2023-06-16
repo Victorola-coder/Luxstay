@@ -13,6 +13,7 @@ input::-webkit-inner-spin-button {
 /* firefox */
 input[type="number"] {
 	-moz-appearance: textfield;
+	appearance: textfield;
 }
 
 .swiper-pagination {
@@ -47,6 +48,9 @@ input[type="number"] {
 	}
 	.emptyCart {
 		animation: emptyCart 0.5s linear forwards;
+	}
+	.nav-link-animation {
+		animation: translateNavLinks 0.3s ease-in;
 	}
 }
 
@@ -83,4 +87,13 @@ input[type="number"] {
 	--black: #000000ff;
 	--sandy-brown: #f2a85dff;
 	--black-2: #000000ff;
+}
+
+@keyframes translateNavLinks {
+	from {
+		transform: translateY(0);
+	}
+	to {
+		transform: translateY(100%);
+	}
 }
