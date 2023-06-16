@@ -57,7 +57,7 @@ export function WhatWeOffer2() {
 							<img
 								src={terrace}
 								alt=""
-								className="w-full rounded-lg h-full transition-all duration-300 scale-img"
+								className="w-full rounded-lg h-full transition-all duration-300 max-md:scale-img md:scale-img-lg"
 							/>
 						</div>
 					)}

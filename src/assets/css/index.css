@@ -99,6 +99,11 @@ input[type="number"] {
 		animation: scaleIn 0.5s linear forwards;
 		animation-delay: 0.5s;
 	}
+	.scale-img-lg {
+		animation: scaleInLg
+		 0.5s linear forwards;
+		animation-delay: 0.5s;
+	}
 	.ripple {
 		animation: rippleEffect 1s linear;
 	}
@@ -114,6 +119,15 @@ input[type="number"] {
 }
 
 @keyframes scaleIn {
+	from {
+		@apply translate-x-0 translate-y-0;
+	}
+	to {
+		@apply translate-x-2 translate-y-2;
+	}
+}
+
+@keyframes scaleInLg {
 	from {
 		@apply translate-x-0 translate-y-0;
 	}
