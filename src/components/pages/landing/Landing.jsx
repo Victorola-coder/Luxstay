@@ -34,7 +34,7 @@ export default function Landing() {
 	]);
 
 	return (
-		<main className="mb-20 space-y-14 mr-2">
+		<main className="mb-20 space-y-14 mx-2">
 			{sections.map((Section, index) => (
 				<Section.component key={index} />
 			))}
