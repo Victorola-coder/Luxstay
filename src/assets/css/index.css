@@ -10,6 +10,38 @@ input::-webkit-inner-spin-button {
 	margin: 0;
 }
 
+:root {
+	--verdigris: #03abadff;
+	--ecru: #b9aa77ff;
+	--black: #000000ff;
+	--sandy-brown: #f2a85dff;
+	--black-2: #000000ff;
+}
+
+body::-webkit-scrollbar {
+	@apply bg-transparent w-1;
+}
+
+body::-webkit-scrollbar-corner {
+	@apply bg-transparent;
+}
+
+body::-webkit-scrollbar-track {
+	@apply bg-black/10;
+}
+
+body::-webkit-scrollbar-track-piece {
+	@apply bg-transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+	@apply bg-sandy-brown/70 hover:bg-sandy-brown/90 rounded-full transition-all duration-500;
+}
+
+* {
+	scrollbar-color: theme(colors.sandy-brown/20) rgb(0, 0, 0, 0);
+}
+
 /* firefox */
 input[type="number"] {
 	-moz-appearance: textfield;
@@ -52,6 +84,9 @@ input[type="number"] {
 	.nav-link-animation {
 		animation: translateNavLinks 0.3s ease-in;
 	}
+	.fade-in {
+		animation: fadeIn 1s linear forwards;
+	}
 }
 
 @keyframes loading {
@@ -81,19 +116,20 @@ input[type="number"] {
 	}
 }
 
-.colors {
-	--verdigris: #03abadff;
-	--ecru: #b9aa77ff;
-	--black: #000000ff;
-	--sandy-brown: #f2a85dff;
-	--black-2: #000000ff;
-}
-
 @keyframes translateNavLinks {
 	from {
 		transform: translateY(0);
 	}
 	to {
 		transform: translateY(100%);
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
 	}
 }

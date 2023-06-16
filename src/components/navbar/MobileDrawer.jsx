@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 export function MobileDrawer({ opened }) {
 	return (
 		<div
-			className={`transition-all duration-300 absolute bg-white/20 border-b-2 border-sandy-brown/50 w-full rounded-br-lg px-1 pt-2 pb-3 z-10 max-w-md border border-t-0 ${
+			className={`transition-all duration-300 absolute bg-white/90 border-b-2 border-sandy-brown/50 w-full rounded-br-lg px-1 pt-2 pb-3 z-10 max-w-md border border-t-0 backdrop-blur-md ${
 				opened
 					? "translate-y-0 opacity-100"
 					: "-translate-y-full opacity-0"
