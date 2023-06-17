@@ -26,7 +26,7 @@ export function BookStay() {
 	return (
 		<div
 			ref={componentRef}
-			className={`my-6 ${isVisible ? "fade-in h-auto" : "sh-screen"}`}
+			className={`my-6 mr-4 ${isVisible ? "fade-in h-auto" : "sh-screen"}`}
 		>
 			<section className="fade-in p-2 text-amber-900 container mx-auto">
 				<div className="flex max-md:flex-col-reverse md:flex-row justify-center gap-4 h-fit">

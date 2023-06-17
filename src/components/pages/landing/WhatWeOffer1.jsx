@@ -26,7 +26,7 @@ export function WhatWeOffer1() {
 	return (
 		<div
 			ref={componentRef}
-			className={`${isVisible ? "h-auto" : "sh-screen"}`}
+			className={`my-6 mr-4 ${isVisible ? "fade-in h-auto" : "sh-screen"}`}
 		>
 			<section
 				className={` transition-all duration-300 p-2 text-amber-900 container mx-auto ${
