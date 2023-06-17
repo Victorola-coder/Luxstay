@@ -32,7 +32,7 @@ export function BookStay() {
 				<div className="flex max-md:flex-col-reverse md:flex-row justify-center gap-4 h-fit">
 					<div className="w-full flex items-center">
 						<div className="w-full py-3 space-y-7">
-							<h1 className="font-bold text-4xl max-md:text-center">
+							<h1 className="font-bold text-4xl">
 								Book Your Extraordinary Stay
 							</h1>
 							<p className="max-w-xl leading-7">
