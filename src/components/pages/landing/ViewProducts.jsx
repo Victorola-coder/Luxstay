@@ -64,7 +64,7 @@ export function ViewProducts() {
 			</Swiper>
 			<div className="flex justify-center mt-6">
 				<Link to="/bookings" className="w-full mx-auto max-w-md">
-					<button className="w-full bg-sandy-brown/30 white px-4 py-2 rounded-md shadow-md font-bold border-2 border-sandy-brown/40 text-amber-900 max-w-md hover:bg-sandy-brown/50 transition-all duration-300 active:scale-90">
+				<button className="bg-sandy-brown/30 rounded-lg p-2 w-full max-w-sm mt-2 border-2 border-sandy-brown transition-all duration-300 hover:bg-sandy-brown/40 font-bold hover:shadow-lg shadow active:scale-90 hover:scale-105">
 						View More...
 					</button>
 				</Link>

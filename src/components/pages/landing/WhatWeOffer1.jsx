@@ -62,15 +62,15 @@ export function WhatWeOffer1() {
 							</div>
 						</div>
 					</div>
-					{isVisible && (
 						<div className="rounded-lg bg-sandy-brown/40 ">
 							<img
 								src={luxury}
 								alt=""
-								className="w-full rounded-lg h-full transition-all duration-300 max-md:scale-img md:scale-img-lg"
+								className={`w-full rounded-lg h-full transition-all duration-300 max-md:scale-imgs md:scale-img-lgs ${
+									isVisible ? "translate-x-4 translate-y-4" : " translate-x-0 translate-y-0"
+								}`}
 							/>
 						</div>
-					)}
 				</div>
 			</section>
 		</div>
