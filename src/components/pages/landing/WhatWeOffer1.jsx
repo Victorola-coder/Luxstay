@@ -26,7 +26,7 @@ export function WhatWeOffer1() {
 	return (
 		<div
 			ref={componentRef}
-			className={`my-6 mr-4 ${isVisible ? "fade-in h-auto" : "sh-screen"}`}
+			className={`my-6 ${isVisible ? "fade-in h-auto" : "sh-screen"}`}
 		>
 			<section
 				className={` transition-all duration-300 p-2 text-amber-900 container mx-auto ${
@@ -62,15 +62,17 @@ export function WhatWeOffer1() {
 							</div>
 						</div>
 					</div>
-						<div className="rounded-lg bg-sandy-brown/40 ">
-							<img
-								src={luxury}
-								alt=""
-								className={`w-full rounded-lg h-full transition-all duration-300 max-md:scale-imgs md:scale-img-lgs ${
-									isVisible ? "translate-x-4 translate-y-4" : " translate-x-0 translate-y-0"
-								}`}
-							/>
-						</div>
+					<div className="rounded-lg bg-sandy-brown/40 mr-2">
+						<img
+							src={luxury}
+							alt=""
+							className={`w-full rounded-lg h-full transition-all duration-300 mr-2 ${
+								isVisible
+									? "max-md:translate-y-2 max-md:translate-x-2 md:translate-x-4 md:translate-y-4"
+									: " translate-x-0 translate-y-0"
+							}`}
+						/>
+					</div>
 				</div>
 			</section>
 		</div>
